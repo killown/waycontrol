@@ -20,3 +20,6 @@ bun dev
 - Frontend: Next.js 15+, TypeScript, Bun
 - Protocol: Django Channels
 - System: Linux/Wayland Control
+
+
+This project is meant to replace: https://github.com/killown/wayremote
