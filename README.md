@@ -1,8 +1,8 @@
 # Waycontrol
 
-High-performance system controller. Next.js (TS) + Django (Python 3.13+).
+Control the compositor from your smartphone. Next.js (TS) + Django (Python 3.13+).
 
-## Execution
+<img width="420" height="922" alt="Screenshot 2026-04-01 at 14-24-44 WayControl" src="https://github.com/user-attachments/assets/51714865-0c82-41c6-ba14-7aa61246b916" />
 
 ### Backend
 source venv/bin/activate
