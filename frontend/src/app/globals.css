@@ -1,0 +1,366 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1d2021;
+  color: #ebdbb2;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#mouseArea {
+  height: 250px; /* Ou 150px conforme seu media query */
+  background-color: #282828;
+  border: 2px solid #3c3836;
+  border-radius: 10px;
+  margin: 20px 0;
+  touch-action: none;
+}
+
+#keyboardButton {
+  background-color: #0d6efd;
+  height: 100px;
+  width: 100%;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .btn,
+  .img-fluid {
+    margin: 5px;
+  }
+  #mouseArea {
+    height: 150px;
+  }
+  #speedControl {
+    padding: 0 15px;
+  }
+}
+
+/* General improvements */
+.btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+.img-fluid {
+  cursor: pointer;
+}
+#mouseArea {
+  touch-action: none; /* Prevent scrolling on touch devices */
+}
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .btn,
+  .img-fluid {
+    margin: 5px;
+  }
+  #mouseArea {
+    height: 150px;
+  }
+  #speedControl {
+    padding: 0 15px;
+  }
+}
+
+/* General improvements */
+.btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+.img-fluid {
+  cursor: pointer;
+}
+#mouseArea {
+  touch-action: none; /* Prevent scrolling on touch devices */
+}
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  .btn,
+  .img-fluid {
+    margin: 5px;
+  }
+  #mouseArea {
+    height: 150px;
+  }
+  #speedControl {
+    padding: 0 15px;
+  }
+}
+
+/* General improvements */
+.btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+.img-fluid {
+  cursor: pointer;
+}
+#mouseArea {
+  touch-action: none; /* Prevent scrolling on touch devices */
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333130;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+#mouseArea {
+  width: 100%;
+  height: 200px;
+  border: 2px solid black;
+  background-color: #28282b;
+  color: #fff;
+  margin: 20px auto;
+  position: relative;
+  touch-action: none; /* Prevent default touch behavior */
+}
+
+#output {
+  white-space: pre-wrap;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  max-width: 800px;
+  width: 100%;
+  overflow: auto;
+}
+
+/* Style for script buttons */
+#scriptsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#scriptsContainer button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ebdbb2;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#scriptsContainer button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.error {
+  color: red;
+}
+
+#speedControl {
+  margin-top: 20px;
+}
+
+/* Style for the button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+  margin: 20px auto;
+  background-color: #1d2021;
+  border-radius: 8px;
+  border-width: 0;
+  margin-top: 2px;
+  color: #ebdbb2;
+  font-size: 16px;
+  text-decoration: none;
+  transition:
+    box-shadow 0.15s,
+    transform 0.15s;
+  padding-left: 6px;
+  padding-right: 6px;
+  box-shadow:
+    rgba(0, 0, 0, 0.507) 0 1px 1px,
+    rgba(0, 0, 0, 0.555) 0 1px 1px,
+    #00000075 0 -4px 0 inset;
+}
+
+/* Style for the Expo button */
+#expoButton {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px; /* Fixed width */
+}
+
+#streamingButton {
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px; /* Fixed width */
+}
+
+#expoButton:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Style for the Scale button */
+#scaleButton {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px; /* Fixed width */
+}
+
+#scaleButton:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Style for the UP and DOWN buttons */
+#upButton,
+#downButton,
+#pageUpButton,
+#pageDownButton,
+#backButton,
+#forwardButton,
+#leftButton,
+#rightButton {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ebdbb2; /* Blue color */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px; /* Fixed width */
+}
+
+#fullscreenButton {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#upButton:hover,
+#downButton:hover,
+#pageUpButton:hover,
+#pageDownButton:hover,
+#leftButton:hover,
+#rightButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for the keyboard activation button */
+#keyboardButton {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  font-size: 64px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#keyboardButton:hover {
+  background-color: #0056b3;
+}
+
+#volUPButton {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ebdbb2;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#volDOWNButton {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #ebdbb2;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hide the input field */
+#hiddenInput {
+  position: absolute;
+  top: -1000px; /* Move it off-screen */
+  opacity: 0; /* Make it invisible */
+}
+
+/* Existing styles... */
+
+/* Streaming grid styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.grid-item span {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
